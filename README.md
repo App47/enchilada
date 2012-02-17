@@ -7,7 +7,7 @@ This is a simple code base that allows you to quickly bulk add users into the Ap
 * Ruby 1.9.2 
 * Bundler 
 
-## Working with Bundler and RVM
+### Working with Bundler and RVM
 
 This project manages Ruby versions via [RVM](http://rvm.beginrescueend.com/) and manages dependencies via [Bundler](http://gembundler.com/). 
 
