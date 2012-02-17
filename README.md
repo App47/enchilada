@@ -16,6 +16,10 @@ You might see some warnings in the output pertaining to your Excel file (especia
 
 If you have any issues, please feel free to contact App47 support at support AT app47.com.
 
+### Limitations
+
+Currently, Enchilada doesn't associate Users to existing Account Groups nor does it create Groups. What's more, Users are not associated to existing Apps. You can do all of this within the App47 Application. Nevertheless, if you do require these features within Enchilada, please feel free to contact us. 
+
 ## Requirements
 
 * Ruby 1.9.2 
