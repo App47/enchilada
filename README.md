@@ -1,12 +1,11 @@
-App47 Bulk User Creation
-========================================================
+# App47 Bulk User Creation
 
-# Requirements
+## Requirements
 
 * Ruby 1.9.2 
 * Bundler 
 
-# Working with Bundler and RVM
+## Working with Bundler and RVM
 
 This project manages Ruby versions via [RVM](http://rvm.beginrescueend.com/) and manages dependencies via [Bundler](http://gembundler.com/). 
 
@@ -20,3 +19,12 @@ Please note, your Ruby 1.9.2 version might need bundler installed:
 
         $ gem install bundler
 
+## How to use Enchilada
+
+Enchilada is simple: there is a sample Excel file in the `etc/` directory. This file has 3 columns: name, email, and an auto-approve flag. Simply fill this file in with user data -- you can put as many as you need. 
+
+Next, obtain your App47 Account Management API token. You can find this in the Account section of the App47 Dashboard -- you should see an API tab. In that tab, you'll find a token (it'll look something like ZSUWSDOtxOdqpzJ9u2A4QIg; that is, it'll be a random sequence of characters).
+
+With your Excel file and token handy, you can then add users by simply typing at the command line:
+
+`ruby whole_enchilada.rb -f <path_to_your_excel_file> -t <your_api_token>`
