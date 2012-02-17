@@ -23,10 +23,14 @@ Please note, your Ruby 1.9.2 version might need bundler installed:
 
 ## How to use Enchilada
 
-Enchilada is simple: there is a sample Excel file in the `etc/` directory. This file has 3 columns: name, email, and an auto-approve flag. Simply fill this file in with user data -- you can put as many as you need. 
+Enchilada is simple: there is a sample Excel file in the `etc/` directory. This file has 3 columns: name, email, and an auto-approve flag. Simply fill this file in with user data -- you can put as many rows containing user data as you need. 
 
 Next, obtain your App47 Account Management API token. You can find this in the Account section of the App47 Dashboard -- you should see an API tab. In that tab, you'll find a token (it'll look something like ZSUWSDOtxOdqpzJ9u2A4QIg; that is, it'll be a random sequence of characters).
 
 With your Excel file and token handy, you can then add users by simply typing at the command line:
 
 `ruby whole_enchilada.rb -f <path_to_your_excel_file> -t <your_api_token>`
+
+You might see some warnings in the output pertaining to your Excel file (especially if you reuse the sample one) to the effect of "WARN   may not be a valid OLE2 structured storage file" -- you can safely ignore them. 
+
+If you have any issues, please feel free to contact App47 support at support AT app47.com. 
