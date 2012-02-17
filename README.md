@@ -1,5 +1,7 @@
 # App47 Bulk User Creation
 
+This is a simple code base that allows you to quickly bulk add users into the App47 System. Right now, the supported format is an Excel file (see an example file in the `etc/` directory). All that's needed is a user's name, email, and an auto-approve flag (true or false are accepted values). Finally, you'll need your App47 Account's API token, which can be found in the Account section of the Dashboard.
+
 ## Requirements
 
 * Ruby 1.9.2 
