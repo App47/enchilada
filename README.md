@@ -1,10 +1,10 @@
 # App47 Bulk User Creation
 
-This is a simple code base that allows you to quickly bulk add users into the [App47](http://www.app47.com) System. Right now, the supported format is an Excel file (see an example file in the `etc/` directory). All that's needed is a user's name, email, an auto-approve flag (true or false are accepted values), and an optional group; what's more, you can set _when_ a temporary invitation password will expire (value is specified in hours). Finally, you'll need your App47 Account's API token, which can be found in the Account section of the [Dashboard](https://cirrus.app47.com).
+This is a simple code base that allows you to quickly bulk add users into the [App47](http://www.app47.com) System. Right now, the supported format is an Excel file (see an example file in the `etc/` directory). All that's needed is a user's name, email, an auto-approve flag (true or false are accepted values), and an optional group; what's more, you can set _when_ a temporary invitation password will expire (value is specified in hours) and you can specify the invitation message that user receives. Finally, you'll need your App47 Account's API token, which can be found in the Account section of the [Dashboard](https://cirrus.app47.com).
 
 ## How to use Enchilada
 
-Enchilada is simple: there is a sample Excel file in the `etc/` directory. This file has 5 columns: name, email, group, auto-approve flag, and an expiration duration for a temporary invitation password. Simply fill this file in with user data -- you can put as many rows containing user data as you need. 
+Enchilada is simple: there is a sample Excel file in the `etc/` directory. This file has 6 columns: name, email, group, auto-approve flag, expiration duration for a temporary invitation password, and an optional invitation message. Simply fill this file in with user data -- you can put as many rows containing user data as you need. 
 
 Next, obtain your App47 Account Management API token. You can find this in the Account section of the App47 Dashboard -- you should see an API tab. In that tab, you'll find a token (it'll look something like ZSUWSDOtxOdqpzJ9u2A4QIg; that is, it'll be a random sequence of characters).
 

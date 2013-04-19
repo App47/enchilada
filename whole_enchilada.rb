@@ -26,7 +26,8 @@ class WholeEnchilada
     2.upto(sheet.last_row) do |row|
       group = sheet.cell(row, 'C')
       @groups << group
-      @users << App47User.new(sheet.cell(row, 'A'), sheet.cell(row, 'B'), group, sheet.cell(row, 'D'), sheet.cell(row, 'E')) 
+      @users << App47User.new(sheet.cell(row, 'A'), sheet.cell(row, 'B'), group, sheet.cell(row, 'D'), 
+        sheet.cell(row, 'E'), sheet.cell(row, 'F')) 
     end
   end
   
@@ -51,7 +52,8 @@ class App47Client
 
     users.each do | user |
       json = { :user => { :name => user.name, :email => user.email, :auto_aproved => user.auto_approve, 
-        :group_ids => [group_map[user.group]], :default_passphrase_expiration => user.password_expire }}.to_json
+        :group_ids => [group_map[user.group]], :default_passphrase_expiration => user.password_expire,
+        :message_for_invitation => user.message_for_invitation }}.to_json
       req_hash = {'X-Token' => @api_token, :accept => :json, :content_type => :json}
       RestClient.post(@@url + '/api/users', json, req_hash) { |response, request, result| handle_user_response response }      
     end
@@ -74,18 +76,19 @@ class App47Client
 end #end App47Client
 
 class App47User
-  attr_accessor :name, :email, :auto_approve, :group, :password_expire 
+  attr_accessor :name, :email, :auto_approve, :group, :password_expire, :message_for_invitation 
   
-  def initialize(name, email, group, auto_approve, password_expire = 48)
+  def initialize(name, email, group, auto_approve, password_expire = 48, message_for_invitation = '')
     @name = name
     @email = email
     @group = group
     @auto_approve = auto_approve
     @password_expire = password_expire
+    @message_for_invitation = message_for_invitation
   end
     
   def to_s
-    "#{name} #{email} #{group} #{auto_approve} #{password_expire}"
+    "#{name} #{email} #{group} #{auto_approve} #{password_expire} #{message_for_invitation}"
   end  
     
 end

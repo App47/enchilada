@@ -22,6 +22,7 @@ class WholeEnchiladaParsingTest < Test::Unit::TestCase
         assert_not_nil usr.auto_approve, 'auto_approve was nil?'
         assert_not_nil usr.group, 'user group was nil?'
         assert_not_nil usr.password_expire, 'user password_expire was nil?'
+        assert_not_nil usr.message_for_invitation, 'message_for_invitation was nil?'
       end
     end
     
