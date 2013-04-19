@@ -34,8 +34,8 @@ end
 
 class App47Client
   
-  # @@url = 'https://cirrus.app47.com'
-  @@url = 'http://0.0.0.0:3000'
+  @@url = 'https://cirrus.app47.com'
+  # @@url = 'http://0.0.0.0:3000'
   
   def initialize(api_token)
     @api_token = api_token
