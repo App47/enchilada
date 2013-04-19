@@ -22,7 +22,7 @@ Currently, Users are not associated to existing Apps. You can do all of this wit
 
 ## Further Information 
 
-For more details about our API, the various objects in our system, or about us in general, see the [App47 wiki](http://www.app47.com/wiki/doku.php). 
+For more details about our API, the various objects in our system, or about us in general, see the [App47 wiki](http://www.app47.com/wiki/doku.php) or check out our [YouTube Channel](https://www.youtube.com/user/App47Videos).
 
 ## Requirements
 
