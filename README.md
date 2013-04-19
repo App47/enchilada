@@ -1,6 +1,6 @@
 # App47 Bulk User Creation
 
-This is a simple code base that allows you to quickly bulk add users into the App47 System. Right now, the supported format is an Excel file (see an example file in the `etc/` directory). All that's needed is a user's name, email, an auto-approve flag (true or false are accepted values), and an optional group; what's more, you can set _when_ a temporary invitation password will expire (value is specified in hours). Finally, you'll need your App47 Account's API token, which can be found in the Account section of the Dashboard.
+This is a simple code base that allows you to quickly bulk add users into the [App47](http://www.app47.com) System. Right now, the supported format is an Excel file (see an example file in the `etc/` directory). All that's needed is a user's name, email, an auto-approve flag (true or false are accepted values), and an optional group; what's more, you can set _when_ a temporary invitation password will expire (value is specified in hours). Finally, you'll need your App47 Account's API token, which can be found in the Account section of the [Dashboard](https://cirrus.app47.com).
 
 ## How to use Enchilada
 
@@ -42,4 +42,16 @@ To set up this project's dependencies, which are defined in the file, `Gemfile`,
 Please note, your Ruby 1.9.2 version might need bundler installed:
 
         $ gem install bundler
+
+# License
+
+The MIT License
+
+Copyright (c) 2011 App47, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
 
