@@ -1,10 +1,10 @@
 # App47 Bulk User Creation
 
-This is a simple code base that allows you to quickly bulk add users into the App47 System. Right now, the supported format is an Excel file (see an example file in the `etc/` directory). All that's needed is a user's name, email, an auto-approve flag (true or false are accepted values), and an optional group. Finally, you'll need your App47 Account's API token, which can be found in the Account section of the Dashboard.
+This is a simple code base that allows you to quickly bulk add users into the App47 System. Right now, the supported format is an Excel file (see an example file in the `etc/` directory). All that's needed is a user's name, email, an auto-approve flag (true or false are accepted values), and an optional group; what's more, you can set _when_ a temporary invitation password will expire (value is specified in hours). Finally, you'll need your App47 Account's API token, which can be found in the Account section of the Dashboard.
 
 ## How to use Enchilada
 
-Enchilada is simple: there is a sample Excel file in the `etc/` directory. This file has 4 columns: name, email, group, and an auto-approve flag. Simply fill this file in with user data -- you can put as many rows containing user data as you need. 
+Enchilada is simple: there is a sample Excel file in the `etc/` directory. This file has 5 columns: name, email, group, auto-approve flag, and an expiration duration for a temporary invitation password. Simply fill this file in with user data -- you can put as many rows containing user data as you need. 
 
 Next, obtain your App47 Account Management API token. You can find this in the Account section of the App47 Dashboard -- you should see an API tab. In that tab, you'll find a token (it'll look something like ZSUWSDOtxOdqpzJ9u2A4QIg; that is, it'll be a random sequence of characters).
 
@@ -18,7 +18,11 @@ If you have any issues, please feel free to contact App47 support at support AT 
 
 ### Limitations
 
-Currently, Users are not associated to existing Apps. You can do all of this within the App47 Application. Nevertheless, if you do require this feature within Enchilada, please feel free to contact us. 
+Currently, Users are not associated to existing Apps. You can do all of this within the App47 Application (either via individual users or via groups). Nevertheless, if you do require this feature within Enchilada, please feel free to contact us.
+
+## Further Information 
+
+For more details about our API, the various objects in our system, or about us in general, see the [App47 wiki](http://www.app47.com/wiki/doku.php). 
 
 ## Requirements
 
