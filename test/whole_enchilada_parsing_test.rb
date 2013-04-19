@@ -21,6 +21,7 @@ class WholeEnchiladaParsingTest < Test::Unit::TestCase
         assert_not_nil usr.email, 'email address was nil?'
         assert_not_nil usr.auto_approve, 'auto_approve was nil?'
         assert_not_nil usr.group, 'user group was nil?'
+        assert_not_nil usr.password_expire, 'user password_expire was nil?'
       end
     end
     
