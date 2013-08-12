@@ -105,8 +105,8 @@ if __FILE__ == $0
     end
   end.parse!
   
-  raise 'You must provide an input file' if options[:file].nil?
-  raise 'You must provide your App47 account API token' if options[:token].nil?
+  raise 'You must provide an input file via the -f flag' if options[:file].nil?
+  raise 'You must provide your App47 account API token via the -t flag' if options[:token].nil?
   
   enchilada = WholeEnchilada.new(options[:file])
   
